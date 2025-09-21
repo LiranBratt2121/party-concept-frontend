@@ -4,7 +4,7 @@ import React from "react";
 import { Section, SectionTitle } from "../Shared/Section.styles";
 import ProductCard from "./ProductCard/ProductCard";
 import { featuredProducts } from "@/lib/data";
-import Carousel from "../Carousel/Carousel";
+import Carousel from "../Shared/Carousel/Carousel";
 
 const FeaturedProducts = () => {
   return (
