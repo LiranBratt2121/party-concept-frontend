@@ -21,15 +21,21 @@ export const featuredProducts: Product[] = [
         priceShekel: 99.10,
         description: "Inflatable boxing gloves",
         imageUrl: "https://partyconcept.co.il/wp-content/uploads/2022/09/אירועים-jpg.webp",
-        category: { name: "צעצועים" }
+        category: { 
+            name: "צעצועים",
+            imageUrl: "https://partyconcept.co.il/wp-content/uploads/2022/09/אירועים-jpg.webp"
+        }
     },
     {
         id: "p2",
-        name: "בריכת מלבנית מתנפחת לילדים",
+        name: "בריכת מלבנית מתנפחת לילדים", 
         priceShekel: 80.55,
         description: "Inflatable pool for kids",
         imageUrl: "https://partyconcept.co.il/wp-content/uploads/2022/06/חולצות-חתונה-יאללה-בלאגן-פארטי-קונספט_500x500-jpg.webp",
-        category: { name: "קיץ" }
+        category: {
+            name: "קיץ",
+            imageUrl: "https://partyconcept.co.il/wp-content/uploads/2022/06/חולצות-חתונה-יאללה-בלאגן-פארטי-קונספט_500x500-jpg.webp"
+        }
     },
     {
         id: "p3",
@@ -37,7 +43,10 @@ export const featuredProducts: Product[] = [
         priceShekel: 90.42,
         description: "Rechargeable fan with water spray",
         imageUrl: "https://partyconcept.co.il/wp-content/uploads/2023/06/white-boxes-with-plates-white-sweets-1_600x600.jpg",
-        category: { name: "קיץ" }
+        category: {
+            name: "קיץ",
+            imageUrl: "https://partyconcept.co.il/wp-content/uploads/2023/06/white-boxes-with-plates-white-sweets-1_600x600.jpg"
+        }
     },
     {
         id: "p4",
@@ -45,7 +54,10 @@ export const featuredProducts: Product[] = [
         priceShekel: 99.44,
         description: "INTEX family pool",
         imageUrl: "https://partyconcept.co.il/wp-content/uploads/2022/06/צדבקות-מיתוג-לאירועים-jpeg.webp",
-        category: { name: "קיץ" }
+        category: {
+            name: "קיץ",
+            imageUrl: "https://partyconcept.co.il/wp-content/uploads/2022/06/צדבקות-מיתוג-לאירועים-jpeg.webp"
+        }
     },
     {
         id: "p5",
@@ -53,7 +65,10 @@ export const featuredProducts: Product[] = [
         priceShekel: 99.44,
         description: "Pool with water spray",
         imageUrl: "https://partyconcept.co.il/wp-content/uploads/2023/12/Depositphotos_366547178_S.jpg",
-        category: { name: "קיץ" }
+        category: {
+            name: "קיץ",
+            imageUrl: "https://partyconcept.co.il/wp-content/uploads/2023/12/Depositphotos_366547178_S.jpg"
+        }
     },
     {
         id: "p6",
@@ -61,7 +76,10 @@ export const featuredProducts: Product[] = [
         priceShekel: 90.42,
         description: "Rechargeable fan with water spray",
         imageUrl: "https://partyconcept.co.il/wp-content/uploads/2023/06/white-boxes-with-plates-white-sweets-1_600x600.jpg",
-        category: { name: "קיץ" }
+        category: {
+            name: "קיץ",
+            imageUrl: "https://partyconcept.co.il/wp-content/uploads/2023/06/white-boxes-with-plates-white-sweets-1_600x600.jpg"
+        }
     },
     {
         id: "p7",
@@ -69,7 +87,10 @@ export const featuredProducts: Product[] = [
         priceShekel: 99.44,
         description: "INTEX family pool",
         imageUrl: "https://partyconcept.co.il/wp-content/uploads/2022/06/צדבקות-מיתוג-לאירועים-jpeg.webp",
-        category: { name: "קיץ" }
+        category: {
+            name: "קיץ",
+            imageUrl: "https://partyconcept.co.il/wp-content/uploads/2022/06/צדבקות-מיתוג-לאירועים-jpeg.webp"
+        }
     },
     {
         id: "p8",
@@ -77,11 +98,14 @@ export const featuredProducts: Product[] = [
         priceShekel: 99.44,
         description: "Pool with water spray",
         imageUrl: "https://partyconcept.co.il/wp-content/uploads/2023/12/Depositphotos_366547178_S.jpg",
-        category: { name: "קיץ" }
+        category: {
+            name: "קיץ",
+            imageUrl: "https://partyconcept.co.il/wp-content/uploads/2023/12/Depositphotos_366547178_S.jpg"
+        }
     }
 ];
 
-export const featuredCategories: (Catagory & { imageUrl: string })[] = [
+export const featuredCategories: (Catagory)[] = [
     {
         name: "חולצות חתונה",
         imageUrl: "https://partyconcept.co.il/wp-content/uploads/2025/08/ChatGPT-Image-Aug-27-2025-12_10_27-PM-247x296.png"
