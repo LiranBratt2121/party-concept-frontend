@@ -7,6 +7,7 @@ import FollowUs from './FollowUs/FollowUs';
 import ProductDisplay from './Products/ProductDisplay';
 import CatagoriesSelector from './CatagoriesSelector/CatagoriesSelector';
 import { Bottom } from './Bottom/Bottom';
+import { exampleProducts } from '@/lib/data';
 
 const Footer = () => {
   return (
@@ -25,32 +26,7 @@ const Footer = () => {
         <Section>
           <Header>מוצרים</Header>
           <ProductDisplay
-            products={[
-              {
-                id: "1",
-                name: "בלון הליום לבן",
-                description: "בלון הליום צבע לבן",
-                priceShekel: 5,
-                category: { name: "בלונים" },
-                imageUrl: "https://partyconcept.co.il/wp-content/uploads/2025/09/BRN_5000052_01.jpg"
-              },
-              {
-                id: "2",
-                name: "בלון הליום אדום",
-                description: "בלון הליום צבע אדום",
-                priceShekel: 5,
-                category: { name: "בלונים" },
-                imageUrl: "https://partyconcept.co.il/wp-content/uploads/2025/09/BRN_5000052_01.jpg"
-              },
-              {
-                id: "3",
-                name: "בלון הליום כחול",
-                description: "בלון הליום צבע כחול",
-                priceShekel: 5,
-                category: { name: "בלונים" },
-                imageUrl: "https://partyconcept.co.il/wp-content/uploads/2025/09/BRN_5000052_01.jpg"
-              }
-            ]}
+            products={exampleProducts}
           />
         </Section>
 
