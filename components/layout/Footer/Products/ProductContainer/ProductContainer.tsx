@@ -12,7 +12,7 @@ const ProductContainer = ({ product }: ProductContainerProps) => {
         <ProductWrapper>
             <ProductImage>
                 <Image
-                    src={product.imageUrl}
+                    src={product.headImageUrl}
                     alt={product.name}
                     width={60}
                     height={60}

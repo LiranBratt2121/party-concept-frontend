@@ -20,7 +20,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
   return (
     <S.CardWrapper>
       <S.ImageWrapper onClick={handleImageClick}>
-        <Image src={product.imageUrl} alt={product.name} layout="fill"/>
+        <Image src={product.headImageUrl} alt={product.name} layout="fill"/>
       </S.ImageWrapper>
       <S.InfoWrapper>
         <S.ProductName>{product.name}</S.ProductName>
