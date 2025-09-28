@@ -27,10 +27,17 @@ export const Actions = styled.div`
 `;
 
 export const Logo = styled(Image)`
+    z-index: 10;
+
   @media (max-width: 768px) {
     order: -1; // Display logo first on mobile
     width: 280px;
     height: auto; // Maintain aspect ratio
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
   }
 `;
 

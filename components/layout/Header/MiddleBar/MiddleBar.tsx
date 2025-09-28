@@ -1,8 +1,17 @@
+"use client";
+
 import React from 'react'
 import { FiShoppingCart } from "react-icons/fi";
 import * as S from "./MiddleBar.styles";
+import { useRouter } from 'next/navigation';
 
 const MiddleBar = () => {
+    const router = useRouter();
+
+    const handleClick = () => {
+        router.replace("/")
+    }
+
     return (
         <S.MiddleBar>
             <S.SearchWrapper>
@@ -14,6 +23,7 @@ const MiddleBar = () => {
                 objectFit="contain"
                 height={150 + 5}
                 width={Number(150 * 2.666666666666666)}
+                onClick={handleClick}
             />
             <S.Actions>
                 <S.Button>התחברות </S.Button>
