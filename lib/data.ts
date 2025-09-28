@@ -14,7 +14,40 @@ export const heroSlides = [
     },
 ];
 
-export const featuredProducts: Product[] = [
+
+const summerImages = [
+    "https://partyconcept.co.il/wp-content/uploads/2022/06/חולצות-חתונה-יאללה-בלאגן-פארטי-קונספט_500x500-jpg.webp",
+    "https://partyconcept.co.il/wp-content/uploads/2023/06/white-boxes-with-plates-white-sweets-1_600x600.jpg",
+    "https://partyconcept.co.il/wp-content/uploads/2022/06/צדבקות-מיתוג-לאירועים-jpeg.webp",
+    "https://partyconcept.co.il/wp-content/uploads/2023/12/Depositphotos_366547178_S.jpg",
+    "https://partyconcept.co.il/wp-content/uploads/2025/05/2_9324974-247x296.jpg",
+    "https://partyconcept.co.il/wp-content/uploads/2025/06/WhatsApp-Image-2025-06-15-at-13.46.18-247x296.jpeg",
+    "https://partyconcept.co.il/wp-content/uploads/2025/06/WhatsApp-Image-2025-06-05-at-12.41.18-1-247x296.jpeg",
+    "https://partyconcept.co.il/wp-content/uploads/2025/07/ChatGPT-Image-Jul-22-2025-01_23_36-PM-247x296.png",
+    "https://partyconcept.co.il/wp-content/uploads/2025/09/%D7%91-%D7%90%D7%A0%D7%A8-%D7%A2%D7%93%D7%9B%D7%A0%D7%99.jpg",
+];
+
+function shuffle<T>(array: T[]): T[] {
+    return [...array].sort(() => Math.random() - 0.5);
+}
+
+export const featuredProducts: Product[] = Array.from({ length: 50 }).map((_, i) => {
+    const shuffled = shuffle(summerImages);
+    return {
+        id: `summer${i + 1}`,
+        name: `מוצר קיץ ${i + 1}`,
+        description: `תיאור קצר למוצר קיץ מספר ${i + 1}. מתאים לקיץ, חוף ובריכה.`,
+        priceShekel: parseFloat((50 + Math.random() * 100).toFixed(2)), // מחיר בין 50–150 ש"ח
+        category: {
+            name: "קיץ",
+            imageUrl: shuffled[0],
+        },
+        headImageUrl: shuffled[0],
+        additionalImageUrls: shuffled.slice(1, 3),
+    };
+});
+
+export const products: Product[] = [
     {
         id: "p1",
         name: "כפפות אגרוף מתנפחות - 2 זוגות",
@@ -25,14 +58,14 @@ export const featuredProducts: Product[] = [
             "https://partyconcept.co.il/wp-content/uploads/2023/06/white-boxes-with-plates-white-sweets-1_600x600.jpg",
             "https://partyconcept.co.il/wp-content/uploads/2022/06/צדבקות-מיתוג-לאירועים-jpeg.webp"
         ],
-        category: { 
+        category: {
             name: "צעצועים",
             imageUrl: "https://partyconcept.co.il/wp-content/uploads/2022/09/אירועים-jpg.webp"
         }
     },
     {
         id: "p2",
-        name: "בריכת מלבנית מתנפחת לילדים", 
+        name: "בריכת מלבנית מתנפחת לילדים",
         priceShekel: 80.55,
         description: "בריכה מתנפחת מלבנית לילדים בגודל משפחתי. עשויה מחומרים איכותיים ועמידים, עם דפנות מחוזקות לבטיחות מירבית. מתאימה לחצר הבית, למרפסת או לטיולים. קלה להרכבה ופירוק.",
         headImageUrl: "https://partyconcept.co.il/wp-content/uploads/2022/06/חולצות-חתונה-יאללה-בלאגן-פארטי-קונספט_500x500-jpg.webp",
@@ -143,23 +176,23 @@ export const featuredCategories: (Catagory)[] = [
         imageUrl: "https://partyconcept.co.il/wp-content/uploads/2025/08/ChatGPT-Image-Aug-27-2025-12_10_27-PM-247x296.png"
     },
     {
-        name: "ציוד ואביזרים למסיבות",
+        name: "קיץ",
         imageUrl: "https://partyconcept.co.il/wp-content/uploads/2025/07/ChatGPT-Image-Jul-22-2025-01_23_36-PM-247x296.png"
     },
     {
-        name: "בריכות ומתנפחים",
+        name: "קיץ",
         imageUrl: "https://partyconcept.co.il/wp-content/uploads/2025/06/WhatsApp-Image-2025-06-15-at-13.46.18-247x296.jpeg"
     },
     {
-        name: "בר מתוקים",
+        name: "קיץ",
         imageUrl: "https://partyconcept.co.il/wp-content/uploads/2025/06/WhatsApp-Image-2025-06-05-at-12.41.18-1-247x296.jpeg"
     },
     {
-        name: "מוזיקה",
+        name: "קיץ",
         imageUrl: "https://partyconcept.co.il/wp-content/uploads/2025/05/2_9324974-247x296.jpg"
     },
     {
-        name: "בלונים מכל הסוגים",
+        name: "קיץ",
         imageUrl: "https://partyconcept.co.il/wp-content/uploads/2025/06/WhatsApp-Image-2025-06-05-at-12.41.18-1-247x296.jpeg"
     }
 ];
