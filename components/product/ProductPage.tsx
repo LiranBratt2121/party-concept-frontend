@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import { Heart, ShoppingCart } from 'lucide-react';
 import { Product } from '@/types/product';
-import { featuredProducts } from '@/lib/data';
 import * as S from './ProductPage.styles';
 import { getRelatedProducts } from '@/utils/productUtils';
 import Carousel from '../Shared/Carousel/Carousel';
@@ -76,7 +75,7 @@ const ProductPage: React.FC<ProductPageProps> = ({ product }) => {
 
           <S.PriceSection>
             <S.Price>₪{product.priceShekel}</S.Price>
-            <S.PriceNote>מחיר כולל מע"ם • משלוח חינם מעל ₪150</S.PriceNote>
+            <S.PriceNote>מחיר כולל מע&quotם • משלוח חינם מעל ₪150</S.PriceNote>
           </S.PriceSection>
 
           <S.DescriptionBox>

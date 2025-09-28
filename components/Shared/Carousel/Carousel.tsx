@@ -1,4 +1,5 @@
 "use client";
+/* eslint-disable  @typescript-eslint/no-explicit-any */
 
 import React, { ReactNode, useEffect } from "react";
 import { useKeenSlider } from "keen-slider/react";

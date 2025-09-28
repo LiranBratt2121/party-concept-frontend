@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Section, SectionTitle } from "../Shared/Section.styles";
+import { Section } from "../Shared/Section.styles";
 import CatagoriesSliderCard from "./CatagoriesSliderCard/CatagoriesSliderCard";
 import { featuredCategories } from "@/lib/data";
 import Carousel from "../Shared/Carousel/Carousel";
