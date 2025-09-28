@@ -16,10 +16,10 @@ const Page = async ({ params }: PageProps) => {
       <p>ahhh {lol}</p>
       <p>Debug info:</p>
       <ul>
-        <li>Raw value: "{lol}"</li>
+        <li>Raw value: &quot{lol}&quot</li>
         <li>Type: {typeof lol}</li>
         <li>Length: {lol?.length}</li>
-        <li>URL decoded: "{decodeURIComponent(lol)}"</li>
+        <li>URL decoded: &quot{decodeURIComponent(lol)}&quot</li>
       </ul>
     </div>
   )

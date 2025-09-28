@@ -53,7 +53,7 @@ const CategoryPage: React.FC<CategoryPageProps> = ({ category, products }) => {
 
   // Filter and sort products
   const processedProducts = useMemo(() => {
-    let filtered = products.filter(p => {
+    const filtered = products.filter(p => {
       const matchesPrice = p.priceShekel >= minPrice && p.priceShekel <= maxPrice;
       const matchesSearch = searchTerm === '' || 
         p.name.toLowerCase().includes(searchTerm.toLowerCase()) ||

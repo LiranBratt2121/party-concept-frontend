@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import { Heart, ShoppingCart } from 'lucide-react';
 import { Product } from '@/types/product';
-import { featuredProducts } from '@/lib/data';
 import * as S from './ProductPage.styles';
 import { getRelatedProducts } from '@/utils/productUtils';
 import Carousel from '../Shared/Carousel/Carousel';
