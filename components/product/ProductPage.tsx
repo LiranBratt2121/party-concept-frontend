@@ -7,6 +7,7 @@ import { featuredProducts } from '@/lib/data';
 import * as S from './ProductPage.styles';
 import { getRelatedProducts } from '@/utils/productUtils';
 import Carousel from '../Shared/Carousel/Carousel';
+import Breadcrumb from '../common/BreadCrumps';
 
 interface ProductPageProps {
   product: Product;
@@ -36,6 +37,13 @@ const ProductPage: React.FC<ProductPageProps> = ({ product }) => {
 
   return (
     <S.Container>
+        <Breadcrumb
+          items={[
+            { label: 'עמוד הבית', href: '/' },
+            { label: product.category.name, href: `/product/${encodeURIComponent(product.category.name)}` },
+            { label: product.name }
+          ]}
+        />
       <S.ProductGrid>
         {/* Product Images */}
         <S.ImageSection>
@@ -108,7 +116,7 @@ const ProductPage: React.FC<ProductPageProps> = ({ product }) => {
             <h3>יש לך שאלות על המוצר?</h3>
             <p>
               <a href="tel:054-790-0070">📞 054-790-0070</a> | <a href="mailto:info@partyconcept.co.il">📧 info@partyconcept.co.il</a>
-            </p>          
+            </p>
           </S.ContactSection>
         </S.ProductInfo>
       </S.ProductGrid>
