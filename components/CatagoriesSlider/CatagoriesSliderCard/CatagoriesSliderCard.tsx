@@ -14,7 +14,7 @@ const CatagoriesSliderCard = ({ catagory }: CatagoriesSliderCardProps) => {
     const router = useRouter();
 
     const handleClick = () => {
-        router.push(`catagory/${catagory.name}`);
+        router.push(`category/${catagory.name}`);
     };
 
     return (

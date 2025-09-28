@@ -14,7 +14,7 @@ const CategoryCard = ({ name, imageUrl }: CategoryCardProps) => {
   const router = useRouter();
 
   const handleClick = () => {
-    router.push(`catagory/${name}`);
+    router.push(`category/${name}`);
   };
 
   return (

@@ -10,7 +10,7 @@ interface ProductPageProps {
 }
 
 export async function generateMetadata({ params }: ProductPageProps): Promise<Metadata> {
-  const product = findProductById(params.id);
+  const product = findProductById(await (params).id);
 
   if (!product) {
     return {
